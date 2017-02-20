@@ -1,1 +1,267 @@
-Hello World
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Islington Underwater Hockey
+    </title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+            crossorigin="anonymous">
+
+            <link rel="stylesheet" href="css/font-awesome.min.css">
+
+            <!-- Latest compiled and minified JavaScript -->
+
+            <link href="https://fonts.googleapis.com/css?family=Mukta+Vaani" rel="stylesheet">
+
+            <style>
+                header {
+                    width: 100%;
+                    height: 4em;
+                    background-color: #673ab7;
+                    color: white;
+                    position: fixed;
+                    z-index: 10;
+                }
+                
+                hero {
+                    display: block;
+                    width: 100%;
+                    height: 100vh;
+                    background-image: url(team.jpg);
+                    background-size: cover;
+                    background-position: center center;
+                    background-color: white;
+                }
+                
+                section {
+                    min-height: 100vh;
+                    display: block;
+                    padding: 1em;
+                    position: relative;
+                    overflow: hidden;
+                }
+                
+                header ul {
+                    color: white;
+                    font-size: 2em;
+                    list-style: none;
+                    padding: 0;
+                    display: flex;
+                    justify-content: flex-end;
+                    margin: 0;
+                    line-height: 1em;
+                }
+                
+                .open-menu {
+                    padding: 1em;
+                    font-size: 1.5em;
+                    display: flex;
+                    justify-content: flex-end;
+                    cursor: pointer;
+                }
+                
+                map-section {
+                    display: block;
+                    width: 800px;
+                    height: 600px;
+                    max-width: calc(100vw - 3em);
+                }
+                
+                header li a {
+                    color: white;
+                    padding: 0.5em;
+                    display: block;
+                }
+                
+                header li a:hover {
+                    background-color: darkblue;
+                    color: white;
+                    text-decoration: none;
+                }
+                
+                .anchor::before {
+                    content: "";
+                    display: block;
+                    height: 4em;
+                    margin: -4em 0 0;
+                }
+                
+                section:before {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    content: '';
+                    filter: blur(5px) opacity(0.5);
+                    background-size: cover;
+                    background-position: center center;
+                    z-index: -1;
+                    transform: scale(1.1);
+                }
+                
+                .join-us:before {
+                    background-image: url('join.jpg');
+                }
+                
+                .when-where:before {
+                    background-image: url('bat.jpg');
+                }
+                
+                .fees:before {
+                    background-image: url(thumbs.jpg);
+                }
+                
+                .pictures:before {
+                    background-image: url('underwater.jpg');
+                }
+                
+                .about-us:before {
+                    background-image: url('together.jpg');
+                }
+                
+                .contact-us:before {
+                    background-image: url(swim.jpg);
+                }
+                
+                @media only screen and (max-width: 900px) {
+                    header {
+                        height: auto;
+                    }
+                    header ul {
+                        font-size: 1.5em;
+                        flex-flow: column;
+                        padding-bottom: 1em;
+                    }
+                }
+                
+                @media only screen and (min-width: 901px) {
+                    .open-menu {
+                        display: none;
+                    }
+                    header [hidden] {
+                        display: flex;
+                    }
+                }
+            </style>
+</head>
+
+<body>
+    <header>
+        <div class="open-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
+        <ul hidden>
+            <li><a href='#join-us'>Join Us</a></li>
+            <li><a href='#when-where'>When and Where</a></li>
+            <li><a href='#pictures'>Pictures</a></li>
+            <li><a href='#fees'>Fees</a></li>
+            <li><a href='#about-us'>About Us</a></li>
+            <li><a href='#contact-us'>Contact Us</a></li>
+        </ul>
+    </header>
+    <hero>
+    </hero>
+    <a name="join-us" class="anchor"></a>
+    <section class="join-us">
+        <h2>Join Us</h2>
+        <p>Welcome to ISOC (Islington Octopush Club)</p>
+        <p>We are always happy to see new people of any skill level, age or sex: if you can swim we can teach you to snorkel,
+            if you can snorkel we can teach you to play Underwater Hockey and enjoy it.</p>
+
+        <p>We normally have 2 - 3 novice players undergoing training and 15 to 20 players ranging from beinners to internationals
+            and several exinternational players!</p>
+
+        <h3>New Players</h3>
+        <p>Join us and try out your first 4 sessions for free</p>
+        <ul>
+            <li>If you can swim, we can teach you to snorkel!</li>
+            <li>If you can snorkel, we can quickly teach you to play Octopush and like it</li>
+        </ul>
+
+        <p>We can supply all the equipment you need (mark, fins, gloves, hat and snorkel) for those who just want to have a
+            go or have yet to made up their minds.</p>
+        <p>You do HAVE to bring your own swimsuit and towel.</p>
+
+        <h3>Existing Players</h3>
+        <ul>
+            <li>If you have your kit, you can just let us know when you'll turn up.</li>
+            <li>If you need kit, let us know, the club has some loan kit.</li>
+        </ul>
+        <h2 class="join-email">Contact Nia (niaphi at hotmail.com) to get involved</h2>
+    </section>
+
+    <a name="when-where" class="anchor"></a>
+    <section class="when-where">
+
+        <h2>When and Where</h2>
+        <p>Our training sessions are Thursday nights 20:30-21.30 at St George's Pool, Shadwell. (221 The Highway, Tower Hamlets,
+            E1 9BP. Tel. 020 7709 9714)</p>
+        <p>The closest station Shadwell East London tube &amp; DLR (the roads from the station to the pool are fairly busy)</p>
+        <p>There is parking round the back of pool (off The Highway)</p>
+        <p>Be at Pool Side 20:25 ready to play!</p>
+        <map-section>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.18661091928!2d-0.06049864878700495!3d51.50979231824965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876032dfdcd7c31%3A0x56eb8efae4e2a067!2sSt+Georges+Swimming+Pool!5e0!3m2!1sen!2suk!4v1487629464414"
+                frameborder="0" style="border:0" allowfullscreen width=100% height=600px></iframe>
+        </map-section>
+    </section>
+
+    <a name="pictures" class="anchor"></a>
+    <section class="pictures">
+
+        <h2>Pictures</h2>
+        <p>Add some pictures here</p>
+    </section>
+
+    <a name="fees" class="anchor"></a>
+    <section class="fees">
+
+        <h2>Fees</h2>
+        <p>New players Come along and try it out for free for the first four sessions!!</p>
+        <p>We have a supply of club loan kit, no charge</p>
+        <p>There are two fees; Club membership and British Octopush Association.</p>
+        <h3>Club membership</h3>
+        <ul>
+            <li><b>Unlimited Swimming:</b> £130 every half year</li>
+            <li><b>Pay as you Go:</b> £70 for 10 sessions, £37.5 for 5 sessions or £9 per session </li>
+        </ul>
+        <h3>British Octopush Association</h3>
+        <ul>
+            <li>Annual fee of £30</li>
+        </ul>
+    </section>
+
+    <a name="about-us" class="anchor"></a>
+    <section class="about-us">
+        <h2>About Us</h2>
+
+        <p>Islington Octopush (Underwater Hockey) Club started out over 40 years ago as a BSAC (British Sub-Aqua Club) Octopush
+            team. We are now independent members of the British Octopush Association (BOA), but still have links with several
+            diving clubs and many of our players continue to dive.</p>
+    </section>
+
+    <a name="contact-us" class="anchor"></a>
+    <section class="contact-us">
+        <h2>Contact Us</h2>
+
+        <p>For more information email Nia (Membership Officer) - niaphi at hotmail.com, or Donald (Chairman)- donald.emerton
+            at tesco.net (replacing at with @)</p>
+    </section>
+    <script>
+        document.querySelector('header .open-menu').addEventListener('click', function () {
+            document.querySelector('header .open-menu').hidden = true;
+            document.querySelector('header ul').hidden = false;
+        })
+
+        document.querySelector('header ul').addEventListener('click', function () {
+            document.querySelector('header ul').hidden = true;
+            document.querySelector('header .open-menu').hidden = false;
+        })
+    </script>
+</body>
+
+</html>
