@@ -143,3 +143,8 @@
   h2, h3, h4, p {
     max-width: 900px;
 }
+
+section a {
+    color: #fded5a;
+    font-weight: bold;
+}
