@@ -10,190 +10,74 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
         crossorigin="anonymous">
 
-        <!-- Optional theme -->
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
-            crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
 
-            <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
-            <!-- Latest compiled and minified JavaScript -->
+    <!-- Latest compiled and minified JavaScript -->
 
-            <link href="https://fonts.googleapis.com/css?family=Mukta+Vaani" rel="stylesheet">
-
-            <style>
-                header {
-                    width: 100%;
-                    height: 4em;
-                    background-color: #673ab7;
-                    color: white;
-                    position: fixed;
-                    z-index: 10;
-                }
-                
-                hero {
-                    display: block;
-                    width: 100%;
-                    height: 100vh;
-                    background-image: url(team.jpg);
-                    background-size: cover;
-                    background-position: center center;
-                    background-color: white;
-                }
-                
-                section {
-                    min-height: 100vh;
-                    display: block;
-                    padding: 1em;
-                    position: relative;
-                    overflow: hidden;
-                }
-                
-                header ul {
-                    color: white;
-                    font-size: 2em;
-                    list-style: none;
-                    padding: 0;
-                    display: flex;
-                    justify-content: flex-end;
-                    margin: 0;
-                    line-height: 1em;
-                }
-                
-                .open-menu {
-                    padding: 1em;
-                    font-size: 1.5em;
-                    display: flex;
-                    justify-content: flex-end;
-                    cursor: pointer;
-                }
-                
-                map-section {
-                    display: block;
-                    width: 800px;
-                    height: 600px;
-                    max-width: calc(100vw - 3em);
-                }
-                
-                header li a {
-                    color: white;
-                    padding: 0.5em;
-                    display: block;
-                }
-                
-                header li a:hover {
-                    background-color: darkblue;
-                    color: white;
-                    text-decoration: none;
-                }
-                
-                .anchor::before {
-                    content: "";
-                    display: block;
-                    height: 4em;
-                    margin: -4em 0 0;
-                }
-                
-                section:before {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    right: 0;
-                    bottom: 0;
-                    content: '';
-                    filter: blur(5px) opacity(0.5);
-                    background-size: cover;
-                    background-position: center center;
-                    z-index: -1;
-                    transform: scale(1.1);
-                }
-                
-                .join-us:before {
-                    background-image: url('join.jpg');
-                }
-                
-                .when-where:before {
-                    background-image: url('bat.jpg');
-                }
-                
-                .fees:before {
-                    background-image: url(thumbs.jpg);
-                }
-                
-                .pictures:before {
-                    background-image: url('underwater.jpg');
-                }
-                
-                .about-us:before {
-                    background-image: url('together.jpg');
-                }
-                
-                .contact-us:before {
-                    background-image: url(swim.jpg);
-                }
-                
-                @media only screen and (max-width: 900px) {
-                    header {
-                        height: auto;
-                    }
-                    header ul {
-                        font-size: 1.5em;
-                        flex-flow: column;
-                        padding-bottom: 1em;
-                    }
-                }
-                
-                @media only screen and (min-width: 901px) {
-                    .open-menu {
-                        display: none;
-                    }
-                    header [hidden] {
-                        display: flex;
-                    }
-                }
-            </style>
+    <link href="https://fonts.googleapis.com/css?family=Mukta+Vaani" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
 
 <body>
+    <a name="top-of-page" class="anchor"></a>
     <header>
+        <a href='#top-of-page'>
+            <logo-element></logo-element>
+        </a>
         <div class="open-menu"><i class="fa fa-bars" aria-hidden="true"></i></div>
         <ul hidden>
             <li><a href='#join-us'>Join Us</a></li>
+            <li><a href='#what-is-underwater-hockey'>FAQs</a></li>
             <li><a href='#when-where'>When and Where</a></li>
-            <li><a href='#pictures'>Pictures</a></li>
             <li><a href='#fees'>Fees</a></li>
             <li><a href='#about-us'>About Us</a></li>
             <li><a href='#contact-us'>Contact Us</a></li>
         </ul>
     </header>
     <hero>
+        <logo-element>
+
+        </logo-element>
     </hero>
     <a name="join-us" class="anchor"></a>
     <section class="join-us">
         <h2>Join Us</h2>
-        <p>Welcome to ISOC (Islington Octopush Club)</p>
-        <p>We are always happy to see new people of any skill level, age or sex: if you can swim we can teach you to snorkel,
-            if you can snorkel we can teach you to play Underwater Hockey and enjoy it.</p>
+        <h4>We like nothing better than seeing new people. If you want to try out the fun that is Underwater Hockey then read
+            on and Contact <a href="mailto:niaphi@hotmail.com?Subject=Getting%20Involved%20In%20Underwater%20Hockey&body=Hi%20Nia%2C%0A%0AI%27d%20like%20to%20get%20involved!%0A%0AThanks%2C"
+                target="_top">Nia</a> if you have any questions.</h4>
 
-        <p>We normally have 2 - 3 novice players undergoing training and 15 to 20 players ranging from beinners to internationals
-            and several exinternational players!</p>
+        <h3>When and where do you play?</h3>
+        <p>We play on Thursday nights at 8:30. For more details look at the <a href="#when-where">location</a> page</p>
 
-        <h3>New Players</h3>
-        <p>Join us and try out your first 4 sessions for free</p>
+        <h3>I'd like to try it out, who should I contact?</h3>
+        <p>Excellent Choice. Contact <a href="mailto:niaphi@hotmail.com?Subject=Getting%20Involved%20In%20Underwater%20Hockey&body=Hi%20Nia%2C%0A%0AI%27d%20like%20to%20get%20involved!%0A%0AThanks%2C"
+                target="_top">Nia</a>.</p>
+
+        <h3>I can already play. Can I still come?</h3>
+        <p>Of course! Don't worry if you don't still have all the gear, we have plenty you can borrow</p>
+
+        <h3>How much does it cost?</h3>
+        <p>For your first few sessions it's free, after for more details look at the <a href="#fees">costs</a> sections</p>
+
+        <h3>What do I need to bring</h3>
+        <p>We can supply spare kit for most of equipment you need (mark, fins, gloves, hat and snorkel)</p>
+        <p>We recommend you bring the following</p>
         <ul>
-            <li>If you can swim, we can teach you to snorkel!</li>
-            <li>If you can snorkel, we can quickly teach you to play Octopush and like it</li>
+            <li>Swimming briefs/trunks/jammers for men, swimming suit for ladies</li>
+            <li>Towel</li>
         </ul>
 
-        <p>We can supply all the equipment you need (mark, fins, gloves, hat and snorkel) for those who just want to have a
-            go or have yet to made up their minds.</p>
-        <p>You do HAVE to bring your own swimsuit and towel.</p>
+        <h3>Who can play?</h3>
+        <p>We would like everyone to join this great sport with us. Regardless of your ability or fitness you should come along
+            and try it out. New players get better very quickly and anyone who can swim at a basic level can start. Unfortunately
+            for insurance reasons we can only take people who are over 18.</p>
 
-        <h3>Existing Players</h3>
-        <ul>
-            <li>If you have your kit, you can just let us know when you'll turn up.</li>
-            <li>If you need kit, let us know, the club has some loan kit.</li>
-        </ul>
-        <h2 class="join-email">Contact Nia (niaphi at hotmail.com) to get involved</h2>
+        <h2 class="join-email">If you are interested then contact <a href="mailto:niaphi@hotmail.com?Subject=Getting%20Involved%20In%20Underwater%20Hockey&body=Hi%20Nia%2C%0A%0AI%27d%20like%20to%20get%20involved!%0A%0AThanks%2C"
+                target="_top">Nia</a> to get involved.</h2>
     </section>
 
     <a name="when-where" class="anchor"></a>
@@ -204,26 +88,53 @@
             E1 9BP. Tel. 020 7709 9714)</p>
         <p>The closest station Shadwell East London tube &amp; DLR (the roads from the station to the pool are fairly busy)</p>
         <p>There is parking round the back of pool (off The Highway)</p>
-        <p>Be at Pool Side 20:25 ready to play!</p>
+        <p>Be ready to play Pool Side at 20:25</p>
+        <p>After training we usually go to the pub</p>
         <map-section>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2483.18661091928!2d-0.06049864878700495!3d51.50979231824965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4876032dfdcd7c31%3A0x56eb8efae4e2a067!2sSt+Georges+Swimming+Pool!5e0!3m2!1sen!2suk!4v1487629464414"
                 frameborder="0" style="border:0" allowfullscreen width=100% height=600px></iframe>
         </map-section>
     </section>
 
-    <a name="pictures" class="anchor"></a>
+    <a name="what-is-underwater-hockey" class="anchor"></a>
     <section class="pictures">
+        <h2>Frequently Asked Questions</h2>
+        <h2>What is Underwater Hockey?</h2>
+        <p>Underwater Hockey, also known as Octopush is a fast paced underwater sport to manoeuvre a lead puck across the bottom
+            of a swimming pool into the opposing team's goal by propelling it with a hockey stick. There are 10 players on
+            each team, with rolling subs as only 6 can be playing at any one time.</p>
 
-        <h2>Pictures</h2>
-        <p>Add some pictures here</p>
+        <p>The games starts with the puck on the bottom of the pool between the two teams. Then once play starts teams are free
+            to swim anywhere in the play area. Scoring happens when the puck enters one of the teams goals, which are made
+            from metal and span about half the width of the playing area. </p>
+
+        <h3>Why is it Great Exercise?</h3>
+        <p>Most sports let you breath while you are playing. However in underwater hockey you need to hold your breath when
+            diving down for the puck. While some people hold their breath for ages the real skill is knowing when to dive.
+            You can then quickly tackle an opponent, pass the puck then resurface for a quick breath of air.</p>
+
+        <h3>Do you do anything social?</h3>
+        <p>Absolutely! After training we usually head off down to the pub.</p>
+
+        <h3>How did it start?</h3>
+        <p>Underwater Hockey started in the United Kingdom in the fifties, bored divers wanted something do something over the
+            winter. Originally the teams had 8 players (hence Octopush) but this has once reduced to 6 a side.</p>
+        <p>From it's small beginnings many teams have formed in the UK and around the world, from New Zealand to Canada. There
+            is even a belgian team.</p>
+
+        <h3>What are the rules?</h3>
+        <p>You can have a look at the complete rules <a href="http://www.gbuwh.co.uk/UserFiles/File/Reference%20Area/Referee/Rules/BOA%20Rules%2011.4a.pdf">here</a>.</p>
+
+        <h3>Are there Competitions?</h3>
+        <p>Of Course! We compete in the British Octopush Association Nautlius tournament, as well as other games in London and
+            occasionally overseas.</p>
     </section>
 
     <a name="fees" class="anchor"></a>
     <section class="fees">
 
         <h2>Fees</h2>
-        <p>New players Come along and try it out for free for the first four sessions!!</p>
-        <p>We have a supply of club loan kit, no charge</p>
+        <p>We have a supply of club loan kit, no charge.</p>
         <p>There are two fees; Club membership and British Octopush Association.</p>
         <h3>Club membership</h3>
         <ul>
@@ -248,9 +159,9 @@
     <a name="contact-us" class="anchor"></a>
     <section class="contact-us">
         <h2>Contact Us</h2>
-
-        <p>For more information email Nia (Membership Officer) - niaphi at hotmail.com, or Donald (Chairman)- donald.emerton
-            at tesco.net (replacing at with @)</p>
+        <p>Or have a look at our <a href="https://www.facebook.com/groups/1622838531314778/">facebook</a> page.</p>
+        <p>For more information email <a href="mailto:niaphi@hotmail.com" target="_top">Nia</a> (Membership Officer), or
+            <a href="mailto:donald@tesco.net" target="_top">Donald</a> (Chairman).</p>
     </section>
     <script>
         document.querySelector('header .open-menu').addEventListener('click', function () {
