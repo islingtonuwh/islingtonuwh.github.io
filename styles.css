@@ -139,3 +139,7 @@
           display: flex;
       }
   }
+
+  h2, h3, h4, p {
+    max-width: 900px;
+}
