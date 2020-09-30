@@ -10,7 +10,8 @@
       color: white;
       position: fixed;
       z-index: 10;
-      background: linear-gradient(to left, #0d0056, #000000);
+      /* background: linear-gradient(to left, #0d0056, #000000); */
+      background: linear-gradient(to left, #960000, #411515);
   }
   hero {
       display: block;
@@ -47,7 +48,8 @@
       display: block;
   }
   header li a:hover {
-      background-color: darkblue;
+      /* background-color: darkblue; */
+      background-color: #b80101;
       color: white;
       text-decoration: none;
   }
@@ -96,9 +98,12 @@
       position: relative;
       display: block;
   }
-  .join-us:before {
+  .covid:before {
       background-image: url('join.jpg');
   }
+  /* .join-us:before {
+      background-image: url('join.jpg');
+  } */
   .when-where:before {
       background-image: url('bat.jpg');
   }
